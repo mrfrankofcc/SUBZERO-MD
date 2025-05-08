@@ -7,7 +7,7 @@ function convertToBool(text, fault = 'true') {
 
 module.exports = {
     // ===== BOT CORE SETTINGS =====
-    SESSION_ID: process.env.SESSION_ID || "",  // Your bot's session ID (keep it secure)
+    SESSION_ID: process.env.SESSION_ID || "SUBZERO-MD~m9hADZYY#R2QNmv4cJhAvkgfMuCHz7S25v1lChSTj2687Ml-uKS4",  // Your bot's session ID (keep it secure)
     PREFIX: process.env.PREFIX || ".",         // Command prefix (e.g., "., / ! * - +")
     BOT_NAME: process.env.BOT_NAME || "SUBZERO-MD",  // Bot's display name
     MODE: process.env.MODE || "public",        // Bot mode: public/private/group/inbox
@@ -26,7 +26,7 @@ module.exports = {
     READ_MESSAGE: process.env.READ_MESSAGE || "false",          // Mark messages as read automatically?
 
     // ===== REACTION & STICKER SETTINGS =====
-    AUTO_REACT: process.env.AUTO_REACT || "false",              // Auto-react to messages?
+    AUTO_REACT: process.env.AUTO_REACT || "true",              // Auto-react to messages?
     CUSTOM_REACT: process.env.CUSTOM_REACT || "false",          // Use custom emoji reactions?
     CUSTOM_REACT_EMOJIS: process.env.CUSTOM_REACT_EMOJIS || "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍",  // Custom reaction emojis
     STICKER_NAME: process.env.STICKER_NAME || "SUBZERO-MD",     // Sticker pack name
