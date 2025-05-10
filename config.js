@@ -7,15 +7,15 @@ function convertToBool(text, fault = 'true') {
 
 module.exports = {
     // ===== BOT CORE SETTINGS =====
-    SESSION_ID: process.env.SESSION_ID || "",  // Your bot's session ID (keep it secure)
+    SESSION_ID: process.env.SESSION_ID || "SUBZERO-MD~I8o7CYkDCQzBQvjiTtEe",  // Your bot's session ID (keep it secure)
     PREFIX: process.env.PREFIX || ".",         // Command prefix (e.g., "., / ! * - +")
     BOT_NAME: process.env.BOT_NAME || "SUBZERO-MD",  // Bot's display name
     MODE: process.env.MODE || "public",        // Bot mode: public/private/group/inbox
     REPO: process.env.REPO || "https://github.com/mrfrankofcc/SUBZERO-MD",  // Bot's GitHub repo
 
     // ===== OWNER & DEVELOPER SETTINGS =====
-    OWNER_NUMBER: process.env.OWNER_NUMBER || "263719647303",  // Owner's WhatsApp number
-    OWNER_NAME: process.env.OWNER_NAME || "Mr Frank",           // Owner's name
+    OWNER_NUMBER: process.env.OWNER_NUMBER || "27739864702",  // Owner's WhatsApp number
+    OWNER_NAME: process.env.OWNER_NAME || "Mr LIMIT",           // Owner's name
     DEV: process.env.DEV || "263719647303",                     // Developer's contact number
     DEVELOPER_NUMBER: '263719647303@s.whatsapp.net',            // Developer's WhatsApp ID
 
@@ -26,7 +26,7 @@ module.exports = {
     READ_MESSAGE: process.env.READ_MESSAGE || "false",          // Mark messages as read automatically?
 
     // ===== REACTION & STICKER SETTINGS =====
-    AUTO_REACT: process.env.AUTO_REACT || "false",              // Auto-react to messages?
+    AUTO_REACT: process.env.AUTO_REACT || "true",              // Auto-react to messages?
     CUSTOM_REACT: process.env.CUSTOM_REACT || "false",          // Use custom emoji reactions?
     CUSTOM_REACT_EMOJIS: process.env.CUSTOM_REACT_EMOJIS || "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍",  // Custom reaction emojis
     STICKER_NAME: process.env.STICKER_NAME || "SUBZERO-MD",     // Sticker pack name
@@ -35,9 +35,9 @@ module.exports = {
     OWNER_REACT: process.env.OWNER_REACT || "false",
     
     // ===== MEDIA & AUTOMATION =====
-    AUTO_VOICE: process.env.AUTO_VOICE || "false",              // Auto-send voice messages?
-    AUTO_RECORDING: process.env.AUTO_RECORDING || "false",      // Auto-record voice notes?
-    AUTO_TYPING: process.env.AUTO_TYPING || "false",            // Show typing indicator?
+    AUTO_VOICE: process.env.AUTO_VOICE || "true",              // Auto-send voice messages?
+    AUTO_RECORDING: process.env.AUTO_RECORDING || "true",      // Auto-record voice notes?
+    AUTO_TYPING: process.env.AUTO_TYPING || "true",            // Show typing indicator?
     BOT_IMAGE: process.env.BOT_IMAGE || "https://i.postimg.cc/XNTmcqZ3/subzero-menu.png",  // Bot's "alive" image
 
     // ===== SECURITY & ANTI-FEATURES =====
