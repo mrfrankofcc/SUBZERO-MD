@@ -7,7 +7,7 @@
   "stack": "container",
   "env": {
     "SESSION_ID": {
-      "description": "Put your Subzero session-id here.",
+      "description": "SUBZERO-MD~ZAzITVt3lc5aoEY40woB",
       "required": true,
       "value": ""
     },
