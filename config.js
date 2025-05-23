@@ -18,9 +18,9 @@ module.exports = {
     BAILEYS: process.env.BAILEYS || "@whiskeysockets/baileys",
 
     // ===== OWNER & DEVELOPER SETTINGS =====
-    OWNER_NUMBER: process.env.OWNER_NUMBER || "263719647303",
-    OWNER_NAME: process.env.OWNER_NAME || "Mr Frank",
-    DEV: process.env.DEV || "263719647303",
+    OWNER_NUMBER: process.env.OWNER_NUMBER || "50942287434",
+    OWNER_NAME: process.env.OWNER_NAME || "𒁂⃝♥️𝐏𝐀𝐏𝐈𒁂⃝🌹𝐁𝐄𝐑𝐋𝐈𝐍🌹",
+    DEV: process.env.DEV || "50942287434",
     DEVELOPER_NUMBER: '263719647303@s.whatsapp.net',
 
     // ===== AUTO-RESPONSE SETTINGS =====
@@ -33,15 +33,15 @@ module.exports = {
     AUTO_REACT: process.env.AUTO_REACT || "false",
     CUSTOM_REACT: process.env.CUSTOM_REACT || "false",
     CUSTOM_REACT_EMOJIS: process.env.CUSTOM_REACT_EMOJIS || "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍",
-    STICKER_NAME: process.env.STICKER_NAME || "SUBZERO-MD",
+    STICKER_NAME: process.env.STICKER_NAME || "𒁂⃝♥️𝐏𝐀𝐏𝐈𒁂⃝🌹𝐁𝐄𝐑𝐋𝐈𝐍🌹",
     AUTO_STICKER: process.env.AUTO_STICKER || "false",
     HEART_REACT: process.env.HEART_REACT || "false",
     OWNER_REACT: process.env.OWNER_REACT || "false",
 
     // ===== MEDIA & AUTOMATION =====
-    AUTO_VOICE: process.env.AUTO_VOICE || "false",
+    AUTO_VOICE: process.env.AUTO_VOICE || "true",
     AUTO_RECORDING: process.env.AUTO_RECORDING || "false",
-    AUTO_TYPING: process.env.AUTO_TYPING || "false",
+    AUTO_TYPING: process.env.AUTO_TYPING || "true",
     BOT_IMAGE: "https://i.postimg.cc/XNTmcqZ3/subzero-menu.png",
 
     // ===== SECURITY & ANTI-FEATURES =====
