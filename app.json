@@ -1,13 +1,13 @@
 {
-  "name": "SUBZERO-MD",
-  "description": "Whiskey Sockets Baileys Whatsapp bot By Mr Frank",
+  "name": "JINX-BOT",
+  "description": "Whiskey Sockets Baileys Whatsapp bot By Khey",
   "logo": "https://i.postimg.cc/zv76KffW/IMG-20250115-WA0020.jpg",
-  "keywords": ["SUBZERO-MD"],
+  "keywords": ["JINX-BOT"],
   "success_url": "/",
   "stack": "heroku-24",
   "env": {
     "SESSION_ID": {
-      "description": "Put your Subzero session-id here.",
+      "description": "Put your Jinx session-id here.",
       "required": true,
       "value": ""
     }
