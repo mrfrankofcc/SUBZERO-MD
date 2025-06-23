@@ -9,10 +9,10 @@ $$\   $$ |$$ |  $$ |$$ |  $$ | $$  _/   $$   ____|$$ |      $$ |  $$ |
 \$$$$$$  |\$$$$$$  |$$$$$$$  |$$$$$$$$\ \$$$$$$$\ $$ |      \$$$$$$  |
  \______/  \______/ \_______/ \________| \_______|\__|       \______/
 
-* Project Name : SubZero MD
-* Creator      : Darrell Mucheri ( Mr Frank OFC )
+* Project Name : JINX BOT
+* Creator      : Khey Wrld ( Jinx )
 * My Git       : https//github.com/mrfr8nk
-* Contact      : wa.me/263719647303
+* Contact      : wa.me/243976841331
 * Channel      : https://whatsapp.com/channel/0029VagQEmB002T7MWo3Sj1D
 * Release Date : 15 Dececmber 2024 12.01 AM
 */
