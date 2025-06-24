@@ -1,6 +1,6 @@
 # GitHub Profile Views Counter
 
-![GitHub Profile Views Counter](https://user-images.githubusercontent.com/1849174/87816378-dfce8480-c86f-11ea-9ac0-2f7907e1d9d4.png)
+![GitHub Profile Views Counter](https://imgur.com/gallery/jinx-cosplay-league-of-legends-OlzKHlL#/t/league_of_legends_jinx)
 
 <p align="center">
 <a href="https://discord.gg/geJF43E"><img src="https://img.shields.io/static/v1?logo=discord&label=&message=Discord&color=36393f&style=flat-square" alt="Discord"></a>
