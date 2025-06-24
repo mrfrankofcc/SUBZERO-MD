@@ -1,189 +1,185 @@
+# GitHub Profile Views Counter
 
-
-
-<p align="center">
-  <h1 align="center" style="font-family: 'Orbitron', sans-serif; text-shadow: 0 0 10px #00ffff, 0 0 20px #0088ff;">SUBZERO-MD</h1>
-</p>
+![GitHub Profile Views Counter](https://imgur.com/gallery/jinx-cosplay-league-of-legends-OlzKHlL#/t/league_of_legends_jinx)
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=25&duration=4000&pause=1000&color=00F7FF&center=true&vCenter=true&width=500&lines=ULTIMATE+WHATSAPP+BOT;MULTI-DEVICE+SUPPORT;POWERED+BY+BAILEYS;FAST++SECURE++RELIABLE" alt="Animated Typing SVG" />
+<a href="https://discord.gg/geJF43E"><img src="https://img.shields.io/static/v1?logo=discord&label=&message=Discord&color=36393f&style=flat-square" alt="Discord"></a>
+<a href="https://github.com/kheyWrld0110/JINX-BOT.git-profile-views-counter/blob/master/LICENSE"><img src="https://github.com/kheyWrld0110/JINX-BOT.git/github-profile-views-counter.svg?style=flat-square" alt="License"></a>
 </p>
 
-<div align="center">
-  <a href="https://github.com/mrfr8nk/followers"><img title="Followers" src="https://img.shields.io/github/followers/mrfr8nk?color=00ffff&style=for-the-badge&logo=github&logoColor=white"></a>
-  <a href="https://github.com/mrfrankofcc/SUBZERO-MD/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/mrfrankofcc/SUBZERO-MD?color=00ffff&style=for-the-badge&logo=reverbnation&logoColor=white"></a>
-  <a href="https://github.com/mrfrankofcc/SUBZERO-MD/network/members"><img title="Forks" src="https://img.shields.io/github/forks/mrfrankofcc/SUBZERO-MD?color=00ffff&style=for-the-badge&logo=git&logoColor=white"></a>
-  <a href="https://github.com/mrfrankofcc/SUBZERO-MD/"><img title="Size" src="https://img.shields.io/github/repo-size/mrfrankofcc/SUBZERO-MD?style=for-the-badge&color=00ffaa&logo=docusign&logoColor=white"></a>
-  <a href="https://github.com/mrfrankofcc/SUBZERO-MD/graphs/commit-activity"><img height="28" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge&logo=gitpod&logoColor=white"></a>
-</div>
+## Introduction
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=SUBZERO-MD&label=VISITORS&style=flat-square&color=00ffff" />
-</p>
+Try [Ÿ HŸPE] service as the more robust and feature rich solution.
 
-> **Current Bot Version `3.8.0`**  
+GHPVС project is proof of concept. This counter designed to be an analytical instrument for you, but not for people who are visiting your profile.
+It could be used to see profile views dynamics as result of development activity, blogging or taking part in a conference.
 
----
+It counts how many times your GitHub profile has been viewed and displays them in your profile, for free.
 
-```
-Dont forget to fork & star repo
-```
+![antonkomarev-profile-views-counter](https://user-images.githubusercontent.com/1849174/88077155-9ccc2400-cb83-11ea-8d9c-d18a8b1dc297.png)
 
----
+## Usage
 
-<div align="center">
-  <img src="https://files.catbox.moe/qla34k.jpg" width="300" style="border-radius: 20px; box-shadow: 0 0 20px #00ffff;"/>
-</div>
+Cloud solution launched as 100% free experience. [Help me cut server costs] if you like this service.
 
-<div align="center">
-  <img src="https://i.imgur.com/LyHic3i.gif" width="400" style="border-radius: 20px; box-shadow: 0 0 25px #0088ff;"/>
-</div>
+If you want to see big numbers in your profile, deploy a standalone solution to draw any views count you want
+without spamming our server. Everybody knows that any counters could be faked.
 
-<div align="center">
-  <img src="https://github.com/mrfrankofcc/SUBZERO-MD/blob/main/assets/divider.gif?raw=true" width="100%"/>
-</div>
-<div align="center">
-  <img src="https://github.com/mrfrankofcc/SUBZERO-MD/blob/main/assets/deployheader.gif?raw=true" width="80%"/>
-</div>
+> A billion fake profile views doesn't make you a very popular person, it makes you a person with a billion number in the counter.
 
-## 🚀 Deployment Steps
+### Create GitHub profile repository
 
-<div style="background: #000000; border: 1px solid #00ffff; border-radius: 15px; padding: 20px; box-shadow: 0 0 15px #00ffff; margin-bottom: 30px;">
-  
-### <img src="https://github.com/mrfrankofcc/SUBZERO-MD/blob/main/assets/forkicon.gif?raw=true" width="25"/> 1. Fork This Repository
-  
-<div style="background: #111111; padding: 15px; border-radius: 10px; border-left: 3px solid #ff00ff;">
-  <p style="color: #00ffff;">First star & Fork repo using button Below !</p>
-  <a href='https://github.com/mrfrankofcc/SUBZERO-MD/fork' target="_blank">
-    <img src='https://img.shields.io/badge/FORK_REPOSITORY-FF5500?style=for-the-badge&logo=github&logoColor=white&labelColor=000000'/>
-  </a>
-</div>
+GitHub magic will happen as soon as you will create a new repository named equally to your username.
 
-</div>
+![secret-profile-repository](https://user-images.githubusercontent.com/1849174/87852702-f24acb80-c90c-11ea-8247-90ae7de0954d.png)
 
-<div style="background: #000000; border: 1px solid #ff00ff; border-radius: 15px; padding: 20px; box-shadow: 0 0 15px #ff00ff; margin-bottom: 30px;">
+[Live demo] of [my profile repository].
 
-### <img src="https://github.com/mrfrankofcc/SUBZERO-MD/blob/main/assets/keyicon.gif?raw=true" width="25"/> 2. Get Session ID
-  
-<div style="background: #111111; padding: 15px; border-radius: 10px; border-left: 3px solid #00ffff;">
-  
---- 
-  > **⚠️ OPTION ONE**
-  <a href='https://subzero-docs.vercel.app' target="_blank">
-    <img src='https://img.shields.io/badge/PAIR_CODE_1-FF7700?style=for-the-badge&logo=matrix&logoColor=white&labelColor=000000'/>
-  </a></br>
-  
-  <div style="height: 10px;"></div>
-  
-  > **⚠️ OPTION TWO**
-  <a href='https://subzeromd.onrender.com' target="_blank">
-    <img src='https://img.shields.io/badge/PAIR_CODE_2-FF00AA?style=for-the-badge&logo=matrix&logoColor=white&labelColor=000000'/>
-  </a>
-  
-  ---
-  <p style="color: #aaaaaa; font-size: 12px; margin-top: 10px;">
-    <img src="https://github.com/mrfrankofcc/SUBZERO-MD/blob/main/assets/warning.gif?raw=true" width="15"/> 
-    Connection issues may require VPN activation
-  </p>
-</div>
+### Add counter to GitHub profile
 
-</div>
+You need to add counter in README.md file in your profile repository via Markdown syntax:
 
-<div align="center">
-  <img src="https://github.com/mrfrankofcc/SUBZERO-MD/blob/main/assets/techwave.gif?raw=true" width="80%"/>
-</div>
-
-## 🚀 DEPLOYMENT OPTIONS
-
-<div align="center">
-  <table>
-    <tr>
-      <td><a href="https://dashboard.heroku.com/new?template=https://github.com/mrfrankofcc/SUBZERO-MD/tree/main" target="_blank"><img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white&labelColor=000000&color=00ffff"/></a></td>
-      <td><a href="https://talkdrove.com/share-bot/11" target="_blank"><img src="https://img.shields.io/badge/TalkDrove-6971FF?style=for-the-badge&logo=github&logoColor=white&labelColor=000000"/></a></td>
-    </tr>
-    <tr>
-      <td><a href="https://app.koyeb.com/services/deploy?type=git&repository=mrfrankofcc/SUBZERO-MD" target="_blank"><img src="https://img.shields.io/badge/Koyeb-FF009D?style=for-the-badge&logo=koyeb&logoColor=white&labelColor=000000"/></a></td>
-      <td><a href="https://railway.app/new" target="_blank"><img src="https://img.shields.io/badge/Railway-FF8700?style=for-the-badge&logo=railway&logoColor=white&labelColor=000000"/></a></td>
-    </tr>
-    <tr>
-      <td><a href="https://dashboard.render.com/web/new" target="_blank"><img src="https://img.shields.io/badge/Render-000000?style=for-the-badge&logo=render&logoColor=white&labelColor=000000&color=00ffaa"/></a></td>
-      <td><a href="https://app.netlify.com/" target="_blank"><img src="https://img.shields.io/badge/Netlify-CC00FF?style=for-the-badge&logo=huggingface&logoColor=white&labelColor=000000"/></a></td>
-    </tr>
-  </table>
-
-  <td><a href="https://github.com/mrfrankofcc/SUBZERO-MD/archive/refs/heads/main.zip" target="_blank"><img src="https://img.shields.io/badge/Panel Zip-000000?style=for-the-badge&logo=bot-hosting&logoColor=white&labelColor=000000&color=blue"/></a></td>
-</div>
-
-<div align="center">
-  <img src="https://github.com/mrfrankofcc/SUBZERO-MD/blob/main/assets/techwave.gif?raw=true" width="100%"/>
-</div>
-
-## 🌟 BOT FEATURES
-
-```bash
-✦ Antidelete, Antiviewonce, Antilink
-✦ High speed YT, Tiktok, FB, IG Downloaders
-✦ 10+ AI models + Image anlysis AI
-✦ Fast low latensie, Powerful
-✦ Futuristic Cool ICY UI
+```markdown
+![](https://komarev.com/ghpvc/?username=KheyWrld0110)
 ```
 
-<div align="center">
-  <img src="https://github.com/mrfrankofcc/SUBZERO-MD/blob/main/assets/cyberdivider.gif?raw=true" width="100%"/>
-</div>
+> [!NOTE]
+>
+> Don't forget to replace example `your-github-username` parameter with real value.
 
-## 🌐 **SOCIAL MEDIA & SUPPORT**
+## Make it personal
 
-<div align="center">
+### Color
 
-### 🚀 **Connect With Me**
-  
-[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://youtube.com/@mrfr4nk)
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://instagram.com/mrfrankofc)
-[![Twitter](https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=X&logoColor=white)](https://twitter.com/mrfr4nk)
-[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)](https://facebook.com/mrfrankofc)
-[![Telegram](https://img.shields.io/badge/Telegram-%2326A5E4.svg?style=for-the-badge&logo=Telegram&logoColor=white)](https://t.me/mrfrankofc)
+You can use any valid HEX color or pick from a predefined set of named colors (`blue` is the default).
 
-<img src="https://github.com/mrfrankofcc/SUBZERO-MD/blob/main/assets/cyberdivider.gif?raw=true" width="100%"/>
+| color | demo |
+| ----- | ---- |
+| `brightgreen` | ![](https://img.shields.io/static/v1?label=Profile+views&message=1234567890&color=brightgreen) |
+| `green` | ![](https://img.shields.io/static/v1?label=Profile+views&message=1234567890&color=green) |
+| `yellow` | ![](https://img.shields.io/static/v1?label=Profile+views&message=1234567890&color=yellow) |
+| `yellowgreen` | ![](https://img.shields.io/static/v1?label=Profile+views&message=1234567890&color=yellowgreen) |
+| `orange` | ![](https://img.shields.io/static/v1?label=Profile+views&message=1234567890&color=orange) |
+| `red` | ![](https://img.shields.io/static/v1?label=Profile+views&message=1234567890&color=red) |
+| `blue` | ![](https://img.shields.io/static/v1?label=Profile+views&message=1234567890&color=blue) |
+| `grey` | ![](https://img.shields.io/static/v1?label=Profile+views&message=1234567890&color=grey) |
+| `lightgrey` | ![](https://img.shields.io/static/v1?label=Profile+views&message=1234567890&color=lightgrey) |
+| `blueviolet` | ![](https://img.shields.io/static/v1?label=Profile+views&message=1234567890&color=blueviolet) |
+| `ff69b4` | ![](https://img.shields.io/static/v1?label=Profile+views&message=1234567890&color=ff69b4) |
 
-### 📢 **Official Support Channel**
-  
-[![WhatsApp Channel](https://img.shields.io/badge/Join_WhatsApp_Channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsapp.com/channel/0029VagQEmB002T7MWo3Sj1D)
+**Named color**
 
-<img src="https://github.com/mrfrankofcc/SUBZERO-MD/blob/main/assets/neonpulse.gif?raw=true" width="300"/>
-
-</div>
-
-## ⚠️ WARNING !
-
-<div style="background-color: #000000; border-left: 5px solid #ff00ff; padding: 10px; border-radius: 0 15px 15px 0; box-shadow: 0 0 15px #ff00ff;">
-  <h3 style="color: #00ffff; font-family: 'Orbitron', sans-serif;">DISCLAIMER</h3>
-  <p style="color: #ffffff;">This bot is not affiliated with WhatsApp Inc. Use at your own risk. Misuse may result in account bans.</p>
-</div>
-
-<div align="center">
-  <img src="https://github.com/mrfrankofcc/SUBZERO-MD/blob/main/assets/digitalrain.gif?raw=true" width="100%"/>
-</div>
-
-## 🧑‍💻 PROJECT ARCHITECTS
-<div align="center">
-  <a href="https://github.com/mrfr8nk">
-    <img src="https://github-readme-stats.vercel.app/api?username=mrfr8nk&show_icons=true&theme=dark&border_color=00ffff&title_color=00ffff&icon_color=00ffff" width="400"/>
-  </a>
-</div>
-
-<div align="center">
-  <img src="https://github.com/mrfrankofcc/SUBZERO-MD/blob/main/assets/futuretech.gif?raw=true" width="100%"/>
-</div>
-
-## 🤖 SUBZERO STATUS
-
-```diff
-+ Project Status: Active
-! Version: 3.8.0 Neon Edition
-# License: APACHE
+```markdown
+![](https://komarev.com/ghpvc/?username=KHEY&color=green)
 ```
 
-<div align="center">
-  <img src="https://github.com/mrfrankofcc/SUBZERO-MD/blob/main/assets/endwave.gif?raw=true" width="100%"/>
-</div>
+**Hex color**
+
+```markdown
+![](https://komarev.com/ghpvc/?username=KHEY&color=dc143c)
+```
+
+> [!NOTE]
+>
+> HEX colors should be used without `#` symbol prefix.
+
+### Styles
+
+The following styles are available (`flat` is the default).
+
+| style | demo |
+| ----- | ---- |
+| `flat` | ![](https://img.shields.io/static/v1?label=Profile+views&message=1234567890&color=007ec6&style=flat) |
+| `flat-square` | ![](https://img.shields.io/static/v1?label=Profile+views&message=1234567890&color=007ec6&style=flat-square) |
+| `plastic` | ![](https://img.shields.io/static/v1?label=Profile+views&message=1234567890&color=007ec6&style=plastic) |
+| `for-the-badge` | ![](https://img.shields.io/static/v1?label=Profile+views&message=1234567890&color=007ec6&style=for-the-badge) |
+| `pixel` | this is "invisible" mode for counter. Use it when you want to have counter without of displaying of it |
+
+```markdown
+![](https://komarev.com/ghpvc/?username=KHEY&style=flat-square)
+```
+
+### Label
+
+You can overwrite default `Profile views` text with your own label.
+
+![](https://img.shields.io/static/v1?label=PROFILE+VIEWS&message=1234567890&color=007ec6)
+
+```markdown
+![](https://komarev.com/ghpvc/?username=KHEY&label=PROFILE+VIEWS)
+```
+
+> [!NOTE]
+>
+> Replace whitespace with `+` character in multi-word labels.
+
+### Base number
+
+You can provide a `base` number to add to the counter.
+This is useful if you are migrating from another service.
+
+For example, a user with 1000 views on another service who wants to migrate to GHPVC will use the following url
+to ensure the 1000 views are accounted for:
+```markdown
+![](https://komarev.com/ghpvc/?username=your-github-username&base=1000)
+```
+
+### Abbreviation
+
+You can set the `abbreviated` parameter to `true` if you would like the counter to be abbreviated.
+
+For example, a counter with 12345 views, will be displayed as 12.3K.
+
+![](https://img.shields.io/static/v1?label=Profile+views&message=12.3K&color=007ec6)
+
+```markdown
+![](https://komarev.com/ghpvc/?username=your-github-username&abbreviated=true)
+```
+
+## FAQ
+
+### Can I see detailed statistics?
+
+This project provides minimalistic counter only. Use [Ÿ HŸPE] service if you want to get detailed info about:
+- user profile views
+- user followers history
+- repository stars history
+- repository traffic for longer than 14 days
+
+### How to reset counter?
+
+To reset counter you should log in to the [Ÿ HŸPE] service, and then you will be able to reset counter on the https://yhype.me/ghpvc page.
+
+### Why does the counter increase every time the page is reloaded?
+
+This is counter of profile views (page hits), not a counter of unique visitors.
+There is no way to get the username, browser user agent or IP address of the visitor because
+GitHub proxies all image URLs through the [GitHub Camo service].
+In other words, we can only increment the counter for each request from the GitHub proxy server,
+we don't know who initiated it.
+
+### Are you making money on it?
+
+No. Only spending it. [Become a sponsor] if you want it to keep running & receive new features.
+
+## Alternatives
+
+- [Ÿ HŸPE] enhanced GitHub professional account statistics & analytics
+
+## License
+
+- `GitHub Profile Views Counter` application is open-sourced software licensed under the [MIT license](LICENSE) by [Anton Komarev].
+- `Eye Octicon` hero image licensed under MIT license by [GitHub, Inc].
+
+## 🌟 Stargazers over time
+
+[![Stargazers over time](https://chart.yhype.me/github/repository-star/v1/278929867.svg)](https://yhype.me?utm_source=github&utm_medium=antonkomarev-github-profile-views-counter&utm_content=chart-repository-star-cumulative)
+
+[Anton Komarev]: https://komarev.com
+[GitHub, Inc]: https://github.com
+[Live demo]: https://github.com/antonkomarev
+[my profile repository]: https://github.com/antonkomarev/antonkomarev
+[Help me cut server costs]: https://paypal.me/antonkomarev
+[Become a sponsor]: https://paypal.me/antonkomarev
+[GitHub Camo service]: https://github.blog/2010-11-13-sidejack-prevention-phase-3-ssl-proxied-assets/
+[Ÿ HŸPE]: https://yhype.me
