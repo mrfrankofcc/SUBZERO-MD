@@ -4,7 +4,7 @@
   "description": "THE BEST BOT IN THE UNIVERSE",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name SUBZERO-MD",
+    "start": "pm2 start index.js --deep-monitoring --attach --name JINX-BOT",
     "stop": "pm2 stop JINX-BOT",
     "restart": "pm2 restart JINX-BOT"
   },
