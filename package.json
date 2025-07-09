@@ -1,6 +1,6 @@
 {
   "name": "SUBZERO-MD",
-  "version": "3.8.0",
+  "version": "4.0.0",
   "description": "THE BEST BOT IN THE UNIVERSE",
   "main": "index.js",
   "scripts": {
@@ -18,8 +18,7 @@
     "adm-zip": "^0.5.16",
     "api-dylux": "latest",
     "btch-downloader": "^2.2.9",
-    "better-sqlite3": "*",
-    "buffer": "^6.0.3",
+    "better-sqlite3": "npm:libsql@0.5.12",
     "cheerio": "^1.0.0-rc.12",
     "crypto-digest-sync": "^1.0.0",
     "crypto-js": "latest",
@@ -46,7 +45,6 @@
     "pdfkit": "^0.14.0",
     "pino": "^7.0.5",
     "pm2": "^6.0.8",
-    "pg" : "latest",
     "qrcode-reader": "^1.0.4",
     "qrcode-terminal": "^0.12.0",
     "ruhend-scraper": "8.0.3",
