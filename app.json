@@ -1,13 +1,13 @@
 {
-  "name": "SUBZERO-MD",
+  "name": "The Coolguy.zw",
   "description": "Whiskey Sockets Baileys Whatsapp bot By Mr Frank",
   "logo": "https://i.postimg.cc/zv76KffW/IMG-20250115-WA0020.jpg",
-  "keywords": ["SUBZERO-MD"],
+  "keywords": ["The Coolguy.zw"],
   "success_url": "/",
   "stack": "heroku-24",
   "env": {
-    "SESSION_ID": {
-      "description": "Put your Subzero session-id here.",
+    "SESSION_ID": 7V3G843S
+      "description": "7V3G843S.",
       "required": true,
       "value": ""
     }
