@@ -7,122 +7,82 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
-        
+
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
-          
-      - name: Debug Environment
-        run: |
-          echo "=== ENVIRONMENT DEBUG ==="
-          echo "Node version: $(node --version)"
-          echo "NPM version: $(npm --version)"
-          echo "Working directory: $(pwd)"
-          echo "Files in current directory:"
-          ls -la
-          echo "=== SESSION ID CHECK ==="
-          if [ -f ".env" ]; then
-            echo ".env file found:"
-            cat .env
-          else
-            echo "No .env file found"
-          fi
-          echo "=== CONFIG FILE CHECK ==="
-          if [ -f "settings.js" ]; then
-            echo "settings.js content:"
-            cat settings.js
-          else
-            echo "No settings.js found"
-          fi
-          
+
       - name: Install Dependencies
         run: |
           echo "=== INSTALLING DEPENDENCIES ==="
-          npm install --verbose
-          echo "=== DEPENDENCY TREE ==="
-          npm list --depth=0
-          
-      - name: Pre-run Checks
+          npm install --production
+
+      - name: Verify Configuration
         run: |
-          echo "=== PRE-RUN CHECKS ==="
-          echo "Checking package.json scripts:"
-          cat package.json | grep -A 10 '"scripts"'
-          echo "=== CHECKING FOR MAIN FILES ==="
-          if [ -f "index.js" ]; then echo "✓ index.js found"; else echo "✗ index.js missing"; fi
-          
-      - name: Run Bot with Detailed Logging
+          echo "=== CONFIGURATION CHECK ==="
+          if [ -f "settings.js" ]; then
+            echo "✓ Configuration file found"
+            echo "Session ID present: $(grep -q 'SESSION_ID' settings.js && echo 'Yes' || echo 'No')"
+          else
+            echo "✗ Configuration file missing!"
+            exit 1
+          fi
+
+      - name: Run Bot
+        timeout-minutes: 300
         run: |
-          echo "=== STARTING SUBZERO-MD BOT ==="
-          echo "Timestamp: $(date)"
-          echo "Starting bot with detailed logging..."
-          
-          # Function to run bot with logging
-          run_bot() {
-            echo ">>> Attempting to start bot..."
-            npm start 2>&1 | while IFS= read -r line; do
-              echo "[$(date '+%Y-%m-%d %H:%M:%S')] $line"
-            done
-            echo ">>> Bot process ended with exit code: $?"
-          }
-          
-          # Run bot in loop with detailed error handling
-          timeout 18000 bash -c '
-            attempt=1
-            while true; do
-              echo "=== ATTEMPT #$attempt ==="
-              run_bot() {
-                echo ">>> Starting bot attempt #$attempt at $(date)"
-                npm start 2>&1 | while IFS= read -r line; do
-                  echo "[$(date +"%H:%M:%S")] $line"
-                done
-                exit_code=$?
-                echo ">>> Bot stopped with exit code: $exit_code at $(date)"
-                return $exit_code
-              }
-              
-              if run_bot; then
-                echo "Bot exited normally, restarting in 5 seconds..."
-              else
-                echo "Bot crashed, analyzing error and restarting in 10 seconds..."
-                echo "=== ERROR ANALYSIS ==="
-                echo "Checking system resources:"
-                free -h
-                df -h
-                echo "Recent system messages:"
-                dmesg | tail -5 2>/dev/null || echo "No system messages available"
-              fi
-              
-              attempt=$((attempt + 1))
-              if [ $attempt -gt 1 ]; then
-                echo "Waiting before restart..."
-                sleep 10
-              else
-                sleep 5
+          echo "=== STARTING BOT AT $(date) ==="
+
+          # Run bot with automatic restart on crash
+          attempt=1
+          max_attempts=999
+
+          while [ $attempt -le $max_attempts ]; do
+            echo ">>> Bot Start Attempt #$attempt at $(date '+%Y-%m-%d %H:%M:%S')"
+
+            npm start 2>&1 | tee -a bot.log | while IFS= read -r line; do
+              echo "[$(date '+%H:%M:%S')] $line"
+
+              # Detect successful startup
+              if echo "$line" | grep -qiE "(connected|online|ready|started|listening)"; then
+                echo "✓ Bot activity detected!"
               fi
             done
-          ' || echo "Timeout reached after 5 hours"
-          
-      - name: Post-Run Analysis
+
+            exit_code=${PIPESTATUS[0]}
+            echo ">>> Bot stopped (exit code: $exit_code) at $(date '+%Y-%m-%d %H:%M:%S')"
+
+            if [ $exit_code -eq 0 ]; then
+              echo "Normal exit detected, restarting in 3 seconds..."
+              sleep 3
+            else
+              echo "Crash detected, restarting in 8 seconds..."
+              sleep 8
+            fi
+
+            attempt=$((attempt + 1))
+          done
+
+      - name: Workflow Completion
         if: always()
         run: |
-          echo "=== POST-RUN ANALYSIS ==="
-          echo "Final timestamp: $(date)"
-          echo "Checking for any log files:"
-          find . -name "*.log" -type f 2>/dev/null || echo "No log files found"
-          echo "=== FINAL SYSTEM STATE ==="
-          free -h
-          df -h
-          
-      - name: Re-Trigger Workflow
+          echo "=== WORKFLOW ENDED AT $(date) ==="
+          if [ -f "bot.log" ]; then
+            echo "Last 50 log lines:"
+            tail -50 bot.log
+          fi
+
+      - name: Auto Re-trigger
         if: always()
         run: |
-          echo "=== AUTO-RESTART ==="
-          echo "Preparing to restart workflow at $(date)"
-          sleep 30
+          echo "Scheduling workflow restart in 60 seconds..."
+          sleep 60
+
           curl -X POST \
             -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
             -H "Accept: application/vnd.github.v3+json" \
             https://api.github.com/repos/${{ github.repository }}/actions/workflows/deploy.yml/dispatches \
             -d '{"ref":"${{ github.ref_name }}"}'
-          echo "Restart triggered successfully"
+
+          echo "✓ Workflow restart triggered successfully"
