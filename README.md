@@ -65,7 +65,7 @@ src="https://dabby.vercel.app/submenu.png">
     </tr>
   </table>
 
-  <td><a href="https://subzeronodes.gleeze.com" target="_blank"><img src="https://img.shields.io/badge/SubzeroNodes-000000?style=for-the-badge&logo=bot-hosting&logoColor=white&labelColor=000000&color=blue"/></a></td>
+  <td><a href="https://subzeronodez.gleeze.com" target="_blank"><img src="https://img.shields.io/badge/SubzeroNodes-000000?style=for-the-badge&logo=bot-hosting&logoColor=white&labelColor=000000&color=blue"/></a></td>
 </div>
 
 <div align="center">
