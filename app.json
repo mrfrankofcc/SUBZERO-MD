@@ -4,10 +4,10 @@
   "description": "NodeJs Whatsapp bot By Mr Frank",
   "logo": "https://mrfrankk-cdn.hf.space/mrfrank/subzero.png",
   "keywords": ["SUBZERO-MD"],
-  "success_url": "/",
+  "success_url": ".",
   "stack": "heroku-24",
   "env": {
-    "SESSION_ID": {
+    "SESSION_ID"Ice~NgkHfU": {
       "description": "Put your Subzero session-id here.",
       "required": true,
       "value": ""
