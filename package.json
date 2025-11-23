@@ -1,12 +1,12 @@
 {
-  "name": "SUBZERO-MD",
+  "name": "SUBZERO🥷-MD",
   "version": "5.0.1",
   "description": "WhatsApp Bot created By Darrell Mucheri.",
   "main": "index.js",
   "scripts": {
     "start": "pm2 start index.js --deep-monitoring --attach --name SUBZERO-MD",
     "stop": "pm2 stop SUBZERO-MD",
-    "restart": "pm2 restart SUBZERO-MD"
+    "restart": "pm2 restart start SUBZERO-MD"
   },
   "dependencies": {
    "@whiskeysockets/baileys": "npm:angularsockets",
