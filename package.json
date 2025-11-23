@@ -6,7 +6,7 @@
   "scripts": {
     "start": "pm2 start index.js --deep-monitoring --attach --name SUBZERO-MD",
     "stop": "pm2 stop SUBZERO-MD",
-    "restart": "pm2 restart SUBZERO-MD"
+    "restart": "pm2 restart start SUBZERO-MD"
   },
   "dependencies": {
    "@whiskeysockets/baileys": "npm:angularsockets",
