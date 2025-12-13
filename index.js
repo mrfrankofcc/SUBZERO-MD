@@ -12,9 +12,9 @@ $$\   $$ |$$ |  $$ |$$ |  $$ | $$  _/   $$   ____|$$ |      $$ |  $$ |
 @ Project Name : SubZero MD
 * Creator      : Darrell Mucheri ( Mr Frank OFC )
 * My Git       : https//github.com/mrfr8nk
-* Contact      : wa.me/263719647303
-* Channel      : https://whatsapp.com/channel/0029VagQEmB002T7MWo3Sj1D
-* Release Date : 15 Dececmber 2024 12.01 AM
+* Contact      : wa.me/263776046121
+* Channel      : https://whatsapp.com/channel/0029Vb7D70MI7BeC0xUnKb05
+* Release Date : 15 December 2024 12.01 AM
 */
 
 
