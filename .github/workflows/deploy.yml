@@ -1,0 +1,88 @@
+name: SUBZERO-MD-DEPLOY
+on:
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: |
+          echo "=== INSTALLING DEPENDENCIES ==="
+          npm install --production
+
+      - name: Verify Configuration
+        run: |
+          echo "=== CONFIGURATION CHECK ==="
+          if [ -f "settings.js" ]; then
+            echo "✓ Configuration file found"
+            echo "Session ID present: $(grep -q 'SESSION_ID' settings.js && echo 'Yes' || echo 'No')"
+          else
+            echo "✗ Configuration file missing!"
+            exit 1
+          fi
+
+      - name: Run Bot
+        timeout-minutes: 300
+        run: |
+          echo "=== STARTING BOT AT $(date) ==="
+
+          # Run bot with automatic restart on crash
+          attempt=1
+          max_attempts=999
+
+          while [ $attempt -le $max_attempts ]; do
+            echo ">>> Bot Start Attempt #$attempt at $(date '+%Y-%m-%d %H:%M:%S')"
+
+            npm start 2>&1 | tee -a bot.log | while IFS= read -r line; do
+              echo "[$(date '+%H:%M:%S')] $line"
+
+              # Detect successful startup
+              if echo "$line" | grep -qiE "(connected|online|ready|started|listening)"; then
+                echo "✓ Bot activity detected!"
+              fi
+            done
+
+            exit_code=${PIPESTATUS[0]}
+            echo ">>> Bot stopped (exit code: $exit_code) at $(date '+%Y-%m-%d %H:%M:%S')"
+
+            if [ $exit_code -eq 0 ]; then
+              echo "Normal exit detected, restarting in 3 seconds..."
+              sleep 3
+            else
+              echo "Crash detected, restarting in 8 seconds..."
+              sleep 8
+            fi
+
+            attempt=$((attempt + 1))
+          done
+
+      - name: Workflow Completion
+        if: always()
+        run: |
+          echo "=== WORKFLOW ENDED AT $(date) ==="
+          if [ -f "bot.log" ]; then
+            echo "Last 50 log lines:"
+            tail -50 bot.log
+          fi
+
+      - name: Auto Re-trigger
+        if: always()
+        run: |
+          echo "Scheduling workflow restart in 60 seconds..."
+          sleep 60
+
+          curl -X POST \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/${{ github.repository }}/actions/workflows/deploy.yml/dispatches \
+            -d '{"ref":"${{ github.ref_name }}"}'
+
+          echo "✓ Workflow restart triggered successfully"
