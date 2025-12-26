@@ -26,7 +26,7 @@ src="https://mrfrankk-cdn.hf.space/media/repo.png">
   <img src="https://komarev.com/ghpvc/?username=mrfr8nk&label=VIEWS&style=flat-square&color=blue" />
 </a>
 <p align="center">
-  <a href="https://github.com/mrfrankofcc/SUBZERO-MD"><img title="Release" src="https://img.shields.io/badge/Release-beta%20v5.0.0-darkcyan.svg?style=for-the-badge&logo=appveyor" /></a>
+  <a href="https://github.com/mrfrankofcc/SUBZERO-MD"><img title="Release" src="https://img.shields.io/badge/Release-beta%20v6.0.0-darkcyan.svg?style=for-the-badge&logo=appveyor" /></a>
 
 <p align='center'>
     </p>
