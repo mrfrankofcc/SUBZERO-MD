@@ -1,24 +1,67 @@
 {
-  "name": "SUBZERO-MD",
-  "version": "5.0.1",
-  "description": "WhatsApp Bot created By Darrell Mucheri.",
+  "name": "subzero-md",
+  "version": "6.0.0",
+  "description": "SUBZERO-MD V6 — A fast, secure, and modular WhatsApp Multi-Device bot built for performance, scalability, and reliability.",
+  "author": "Mr Frank OFC (Darrell Mucheri)",
+  "license": "MIT",
+
   "main": "index.js",
-  "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name SUBZERO-MD",
-    "stop": "pm2 stop SUBZERO-MD",
-    "restart": "pm2 restart SUBZERO-MD"
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrfrankofcc/subzero-md"
   },
+
+  "bugs": {
+    "url": "https://github.com/mrfrankofcc/subzero-md/issues"
+  },
+
+  "homepage": "https://github.com/mrfrankofcc/subzero-md#readme",
+
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/mrfr8nk"
+  },
+
+  "engines": {
+    "node": ">=20.0.0"
+  },
+
+
+  "keywords": [
+    "subzero-md",
+    "whatsapp-bot",
+    "baileys",
+    "multi-device",
+    "whatsapp-automation",
+    "nodejs",
+    "mr-frank-ofc",
+    "angularsockets"
+  ],
+
+  "scripts": {
+    "start": "pm2 start index.js --name SUBZERO-MD --deep-monitoring",
+    "stop": "pm2 stop SUBZERO-MD",
+    "restart": "pm2 restart SUBZERO-MD",
+    "logs": "pm2 logs SUBZERO-MD",
+    "status": "pm2 status",
+    "dev": "node index.js",
+    "clean": "rm -rf node_modules package-lock.json",
+    "reinstall": "npm run clean && npm install"
+  },
+
   "dependencies": {
-   "@whiskeysockets/baileys": "npm:angularsockets",
-    "axios": "^1.7.9",
     "@adiwajshing/keyed-db": "latest",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@octokit/rest": "latest",
     "@vitalets/google-translate-api": "^9.2.0",
+    "@whiskeysockets/baileys": "^7.0.0-rc.9",
     "acrcloud": "^1.4.0",
     "adm-zip": "^0.5.16",
     "api-dylux": "latest",
-    "btch-downloader": "^2.2.9",
+    "axios": "*",
     "better-sqlite3": "npm:libsql@0.5.12",
+    "btch-downloader": "^2.2.9",
     "cheerio": "^1.0.0-rc.12",
     "crypto-digest-sync": "^1.0.0",
     "crypto-js": "latest",
@@ -29,17 +72,15 @@
     "file_size_url": "1.0.4",
     "fluent-ffmpeg": "^2.1.2",
     "form-data": "^4.0.0",
-    "fs": "^0.0.1-security",
     "fs-extra": "^11.1.0",
     "google-tts-api": "^2.0.2",
     "javascript-obfuscator": "^4.0.0",
-    "jimp": "^0.16.1",
+    "jimp": "*",
     "megajs": "^1.1.0",
     "mongoose": "^8.0.0",
     "node-cache": "^5.1.1",
     "node-fetch": "^2.6.1",
     "node-webpmux": "^3.1.0",
-    "@octokit/rest": "latest",
     "path": "^0.12.7",
     "pdf-lib": "^1.17.1",
     "pdfkit": "^0.14.0",
@@ -56,5 +97,9 @@
     "wa-sticker-formatter": "^4.4.4",
     "wa_set_pkg": "1.0.5",
     "yt-search": "2.11.1"
+  },
+
+  "devDependencies": {
+    "nodemon": "^3.0.2"
   }
 }

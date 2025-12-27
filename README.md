@@ -1,18 +1,18 @@
-<!--SUBZERO V5 FINAL || DO NOT COPY MY README WITHOUT CREDITS-->
+<!--SUBZERO V6 FINAL || DO NOT COPY MY README WITHOUT CREDITS-->
 
 
 
 <h1 align="center">𝐒𝐔𝐁𝐙𝐄𝐑𝐎 𝐌𝐃 </h1>
 
 <img align="center" height="auto"
-src="https://mrfrankk-cdn.hf.space/mrfrank/menu.png">
+src="https://mrfrankk-cdn.hf.space/media/repo.png">
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=506EF8&lines=WELCOME+TO+SUBZERO+MD+MADE+BY;MR+FRANK+OFC;THANKS+FOR+VISITING+MY+REPO)](https://git.io/typing-svg)
 <br>
 
    </p>
 <p align="center">
-<a href="https://github.com/mrfr8nk"><img title="Author" src="https://img.shields.io/badge/mrfrank-blue?style=for-the-badge&logo=Github"></a> <a href="https://youtube.com/@mrfr4nk"><img title="Author" src="https://img.shields.io/badge/YT CHANNEL-darkred?style=for-the-badge&logo=youtube"></a> <a href="https://wa.me/263719647303"><img title="Author" src="https://img.shields.io/badge/Contact Me-darkgreen?style=for-the-badge&logo=whatsapp"></a>
+<a href="https://github.com/mrfr8nk"><img title="Author" src="https://img.shields.io/badge/mrfrank-blue?style=for-the-badge&logo=Github"></a> <a href="https://youtube.com/@mrfr4nk"><img title="Author" src="https://img.shields.io/badge/YT CHANNEL-darkred?style=for-the-badge&logo=youtube"></a> <a href="https://whatsapp.com/channel/0029Vb7D70MI7BeC0xUnKb05"><img title="Channel" src="https://img.shields.io/badge/Contact Me-darkgreen?style=for-the-badge&logo=whatsapp"></a>
 <p/> 
 
  <p align="center">
@@ -26,7 +26,7 @@ src="https://mrfrankk-cdn.hf.space/mrfrank/menu.png">
   <img src="https://komarev.com/ghpvc/?username=mrfr8nk&label=VIEWS&style=flat-square&color=blue" />
 </a>
 <p align="center">
-  <a href="https://github.com/mrfrankofcc/SUBZERO-MD"><img title="Release" src="https://img.shields.io/badge/Release-beta%20v5.0.0-darkcyan.svg?style=for-the-badge&logo=appveyor" /></a>
+  <a href="https://github.com/mrfrankofcc/SUBZERO-MD"><img title="Release" src="https://img.shields.io/badge/Release-beta%20v6.0.0-darkcyan.svg?style=for-the-badge&logo=appveyor" /></a>
 
 <p align='center'>
     </p>
@@ -41,7 +41,7 @@ src="https://mrfrankk-cdn.hf.space/mrfrank/menu.png">
 <p align="center">
     <strong>𝗚𝗘𝗧 𝗦𝗘𝗦𝗦𝗜𝗢𝗡_𝗜𝗗 </strong>
   <br>
-    <a href="https://subzero-auth.koyeb.app" target="_blank">
+    <a href="https://pair.subzero.gleeze.com" target="_blank">
         <img alt="Session ID" src="https://img.shields.io/badge/SESSION%20ID-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkblue&color=darkpurple"/>
     </a>
 </p>
@@ -65,7 +65,7 @@ src="https://mrfrankk-cdn.hf.space/mrfrank/menu.png">
     </tr>
   </table>
 
-  <td><a href="https://subzeronodes.gleeze.com" target="_blank"><img src="https://img.shields.io/badge/SubzeroNodes-000000?style=for-the-badge&logo=bot-hosting&logoColor=white&labelColor=000000&color=blue"/></a></td>
+  <td><a href="https://subzeronodez.gleeze.com" target="_blank"><img src="https://img.shields.io/badge/SubzeroNodes-000000?style=for-the-badge&logo=bot-hosting&logoColor=white&labelColor=000000&color=blue"/></a></td>
 </div>
 
 <div align="center">
@@ -78,7 +78,7 @@ src="https://mrfrankk-cdn.hf.space/mrfrank/menu.png">
 ## Credits
 
 - [Dev](https://github.com/mrfr8nk)
-- [Baileys](https://github.com/WhiskeySockets)
+- [Angular Sockets Baileys](https://www.npmjs.com/package/angularsockets)
 
 <h2 align="center">  𝗣𝗢𝗟𝗜𝗧𝗘 𝗡𝗢𝗧𝗜𝗖𝗘!
 </h2>
