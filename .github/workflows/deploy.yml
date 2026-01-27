@@ -1,7 +1,7 @@
 name: SUBZERO-MD-DEPLOY
 on:
   workflow_dispatch:
-jobs:
+jobs: _autoview status 
   deploy:
     runs-on: ubuntu-latest
     steps:
@@ -10,7 +10,7 @@ jobs:
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
-        with:
+        with:😍
           node-version: '20'
 
       - name: Install Dependencies
