@@ -44,7 +44,7 @@ jobs:
           npm list --depth=0
           
       - name: Pre-run Checks
-        run: |npm start
+        run: |
           echo "=== PRE-RUN CHECKS ==="
           echo "Checking package.json scripts:"
           cat package.json | grep -A 10 '"scripts"'
