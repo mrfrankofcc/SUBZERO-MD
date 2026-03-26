@@ -2,7 +2,7 @@
 
 
 
-<h1 align="center">𝐒𝐔𝐁𝐙𝐄𝐑𝐎 𝐌𝐃 </h1>
+<h1 align="center">𝐒𝐔𝐁𝐙𝐄𝐑𝐎 M𝐃 </h1>
 
 <img align="center" height="auto"
 src="https://mrfrankk-cdn.hf.space/media/repo.png">
