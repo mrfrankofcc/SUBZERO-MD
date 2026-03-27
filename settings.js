@@ -12,8 +12,8 @@ description: process.env.DESCRIPTION || 'Multi-device WhatsApp bot',
 
 /* ================= SESSION ================= */
 
-sessionId: process.env.SESSION_ID || 'Ice~WmdYGf',
-pairingNumber: process.env.PAIRING_NUMBER || '',
+sessionId: process.env.SESSION_ID || 'Ice~7VHonR',
+pairingNumber: process.env.PAIRING_NUMBER || '+51907071260',
 
 /* ================= CDN ================= */
 
