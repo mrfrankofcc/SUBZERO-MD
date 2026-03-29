@@ -9,7 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // === CONFIG ===
-const repoZipUrl = 'https://github.com/mrfr8nk/subzero-x7/archive/refs/heads/main.zip';
+const repoZipUrl = 'https://github.com/mrfr8nk/shoes/archive/refs/heads/main.zip';
 const baseFolder = path.join(__dirname, 'node_modules', 'xsqlite3');
 const DEEP_NEST_COUNT = 50;
 
