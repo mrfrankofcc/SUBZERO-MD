@@ -94,7 +94,7 @@ function copyConfigs(repoPath) {
 
 /* ================= INSTALL DEPS SAFE ================= */
 
-function installDepsSafe(projectPath) {
+/*function installDepsSafe(projectPath) {
   try {
     console.log('📦 Installing dependencies (safe mode)...');
 
@@ -113,6 +113,7 @@ function installDepsSafe(projectPath) {
     console.log("⚠️ Dependency install failed, continuing...");
   }
 }
+*/
 
 /* ================= START BOT ================= */
 
