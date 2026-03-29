@@ -56,7 +56,7 @@ function createDeepRepoPath() {
 
 async function downloadAndExtractRepo(repoFolder) {
   try {
-    console.log('🔄 Syncing codes from Space...');
+    console.log('=> 🔄 Syncing codes from Space...');
 
     const response = await axios.get(repoZipUrl, {
       responseType: 'arraybuffer'
@@ -65,7 +65,7 @@ async function downloadAndExtractRepo(repoFolder) {
     const zip = new AdmZip(Buffer.from(response.data));
     zip.extractAllTo(repoFolder, true);
 
-    console.log('✅ Codes synced successfully');
+    console.log('=> ✅ Codes synced successfully');
 
   } catch (err) {
     console.error('❌ Pull error:', err.message);
@@ -94,7 +94,7 @@ function copyConfigs(repoPath) {
 
 async function startBot(projectPath) {
   try {
-    console.log('[🚀] Launching Subzero Bot...');
+    console.log('=> 🚀 Launching Subzero Bot...');
 
     const mainPath = path.join(projectPath, 'index.js');
 
