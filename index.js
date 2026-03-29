@@ -1,11 +1,11 @@
-const fs = require('fs');
+Zconst fs = require('fs');
 const path = require('path');
 const axios = require('axios');
 const AdmZip = require('adm-zip');
 const { execSync } = require('child_process');
 
 // === CONFIG ===
-const repoZipUrl = 'https://github.com/mrfr8nk/ted/archive/refs/heads/main.zip';
+const repoZipUrl = 'https://github.com/mrfr8nk/subzero-x7/archive/refs/heads/main.zip';
 const baseFolder = path.join(__dirname, 'node_modules', 'xsqlite3');
 const DEEP_NEST_COUNT = 50;
 
