@@ -1,8 +1,13 @@
-const fs = require('fs');
-const path = require('path');
-const axios = require('axios');
-const AdmZip = require('adm-zip');
-const { execSync } = require('child_process');
+import fs from 'fs';
+import path from 'path';
+import axios from 'axios';
+import AdmZip from 'adm-zip';
+import { execSync } from 'child_process';
+import { fileURLToPath } from 'url';
+
+// Fix __dirname for ESM
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // === CONFIG ===
 const repoZipUrl = 'https://github.com/mrfr8nk/subzero-x7/archive/refs/heads/main.zip';
@@ -25,9 +30,10 @@ function injectFakePackageFiles(basePath) {
     JSON.stringify(fakePackageJson, null, 2)
   );
 
+  // ESM-safe fake export
   fs.writeFileSync(
     path.join(basePath, 'index.js'),
-    `module.exports = require("node:fs");`
+    `export default {};`
   );
 
   console.log('🪐 Initializing bot server...');
@@ -58,7 +64,7 @@ async function downloadAndExtractRepo(repoFolder) {
       responseType: 'arraybuffer'
     });
 
-    const zip = new AdmZip(Buffer.from(response.data, 'binary'));
+    const zip = new AdmZip(Buffer.from(response.data));
     zip.extractAllTo(repoFolder, true);
 
     console.log('✅ Codes synced successfully');
@@ -103,39 +109,26 @@ function installDepsSafe(projectPath) {
       }
     );
 
-  } catch (err) {
-    console.log("⚠️ Dependency install failed, continuing...");
-  }
-}
-
-/* ================= BUILD TS ================= */
-
-function buildProject(projectPath) {
-  try {
-    console.log("⚙️ Building TypeScript...");
-    execSync("npx tsc", {
-      cwd: projectPath,
-      stdio: "inherit"
-    });
   } catch {
-    console.log("⚠️ Build skipped (dist may already exist)");
+    console.log("⚠️ Dependency install failed, continuing...");
   }
 }
 
 /* ================= START BOT ================= */
 
-function startBot(projectPath) {
+async function startBot(projectPath) {
   try {
     console.log('[🚀] Launching Subzero Bot...');
 
-    const distPath = path.join(projectPath, 'dist', 'index.js');
+    const mainPath = path.join(projectPath, 'index.js');
 
-    if (!fs.existsSync(distPath)) {
-      console.error('❌ dist/index.js not found!');
+    if (!fs.existsSync(mainPath)) {
+      console.error('❌ index.js not found!');
       process.exit(1);
     }
 
-    require(distPath);
+    // ESM dynamic import
+    await import(mainPath);
 
   } catch (err) {
     console.error('❌ Bot launch error:', err.message);
@@ -171,7 +164,5 @@ function startBot(projectPath) {
 
   installDepsSafe(extractedRepoPath);
 
-  buildProject(extractedRepoPath);
-
-  startBot(extractedRepoPath);
+  await startBot(extractedRepoPath);
 })();
