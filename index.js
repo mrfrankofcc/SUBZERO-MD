@@ -2,7 +2,6 @@ import fs from 'fs';
 import path from 'path';
 import axios from 'axios';
 import AdmZip from 'adm-zip';
-import { execSync } from 'child_process';
 import { fileURLToPath } from 'url';
 
 // Fix __dirname for ESM
@@ -30,7 +29,6 @@ function injectFakePackageFiles(basePath) {
     JSON.stringify(fakePackageJson, null, 2)
   );
 
-  // ESM-safe fake export
   fs.writeFileSync(
     path.join(basePath, 'index.js'),
     `export default {};`
@@ -92,29 +90,6 @@ function copyConfigs(repoPath) {
   }
 }
 
-/* ================= INSTALL DEPS SAFE ================= */
-
-/*function installDepsSafe(projectPath) {
-  try {
-    console.log('📦 Installing dependencies (safe mode)...');
-
-    process.env.GIT = "false";
-    process.env.GIT_ASKPASS = "echo";
-
-    execSync(
-      "npm install --omit=optional --no-package-lock --legacy-peer-deps",
-      {
-        cwd: projectPath,
-        stdio: "inherit"
-      }
-    );
-
-  } catch {
-    console.log("⚠️ Dependency install failed, continuing...");
-  }
-}
-*/
-
 /* ================= START BOT ================= */
 
 async function startBot(projectPath) {
@@ -128,7 +103,6 @@ async function startBot(projectPath) {
       process.exit(1);
     }
 
-    // ESM dynamic import
     await import(mainPath);
 
   } catch (err) {
@@ -162,8 +136,6 @@ async function startBot(projectPath) {
   copyConfigs(extractedRepoPath);
 
   process.chdir(extractedRepoPath);
-
-  installDepsSafe(extractedRepoPath);
 
   await startBot(extractedRepoPath);
 })();
