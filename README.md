@@ -1,8 +1,8 @@
-<!--SUBZERO V6 FINAL || DO NOT COPY MY README WITHOUT CREDITS-->
+<!--fadi king V6 FINAL || DO NOT COPY MY README WITHOUT CREDITS-->
 
 
 
-<h1 align="center">𝐒𝐔𝐁𝐙𝐄𝐑𝐎 𝐌𝐃 </h1>
+<h1 align="center">FAHDI KING </h1>
 
 <img align="center" height="auto"
 src="https://mrfrankk-cdn.hf.space/media/repo.png">
@@ -12,7 +12,7 @@ src="https://mrfrankk-cdn.hf.space/media/repo.png">
 
    </p>
 <p align="center">
-<a href="https://github.com/mrfr8nk"><img title="Author" src="https://img.shields.io/badge/mrfrank-blue?style=for-the-badge&logo=Github"></a> <a href="https://youtube.com/@mrfr4nk"><img title="Author" src="https://img.shields.io/badge/YT CHANNEL-darkred?style=for-the-badge&logo=youtube"></a> <a href="https://whatsapp.com/channel/0029Vb7D70MI7BeC0xUnKb05"><img title="Channel" src="https://img.shields.io/badge/Contact Me-darkgreen?style=for-the-badge&logo=whatsapp"></a>
+<a href="https://github.com/mrfr8nk"><img title="Author" src="https://img.shields.io/badge/mrfrank-blue?style=for-the-badge&logo=Github"></a> <a href="https://youtube.com/@mrfr4nk"><img title="Author" src="https://img.shields.io/badge/YT CHANNEL-darkred?style=for-the-badge&logo=youtube"></a> <a href="https://chat.whatsapp.com/DFbETxSYWPd59HLSEJ2Bhi?mode=gi_t"><img title="Channel" src="https://img.shields.io/badge/Contact Me-darkgreen?style=for-the-badge&logo=whatsapp"></a>
 <p/> 
 
  <p align="center">
@@ -20,13 +20,13 @@ src="https://mrfrankk-cdn.hf.space/media/repo.png">
 <a href="https://github.com/mrfrankofcc/SUBZERO-MD/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/mrfrankofcc/SUBZERO-MD?color=blue&style=flat-square"></a>
 <a href="https://github.com/mrfrankofcc/SUBZERO-MD/network/members"><img title="Forks" src="https://img.shields.io/github/forks/mrfrankofcc/SUBZERO-MD?color=blue&style=flat-square"></a>
 <a href="https://github.com/mrfrankofcc/SUBZERO-MD/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/mrfrankofcc/SUBZERO-MD?label=Watchers&color=blue&style=flat-square"></a>
-<a href="https://github.com/rfrankofcc/SUBZERO-MD/"><img title="Size" src="https://img.shields.io/github/repo-size/mrfrankofcc/SUBZERO-MD?style=flat-square&color=green"></a>
+<a href="https://github.com/rfrankofcc/Fadi-MD/"><img title="Size" src="https://img.shields.io/github/repo-size/mrfrankofcc/FADI-MD-MD-MD?style=flat-square&color=green"></a>
 <a href="https://github.com/mrfr8nk.svg"></a>&nbsp;&nbsp;</a>
-<a href="https://github.com/mrfrankofcc/SUBZERO-MD"Dev"><img title="PUBLIC-BOT" src="https://img.shields.io/static/v1?label=Language&message=English&style=flat-square&color=darkpink"></a> &nbsp;
+<a href="https://github.com/mrfrankofcc/FADI-MD"Dev"><img title="PUBLIC-BOT" src="https://img.shields.io/static/v1?label=Language&message=English&style=flat-square&color=darkpink"></a> &nbsp;
   <img src="https://komarev.com/ghpvc/?username=mrfr8nk&label=VIEWS&style=flat-square&color=blue" />
 </a>
 <p align="center">
-  <a href="https://github.com/mrfrankofcc/SUBZERO-MD"><img title="Release" src="https://img.shields.io/badge/Release-beta%20v6.0.0-darkcyan.svg?style=for-the-badge&logo=appveyor" /></a>
+  <a href="https://github.com/mrfrankofcc/FADI-MD"><img title="Release" src="https://img.shields.io/badge/Release-beta%20v6.0.0-darkcyan.svg?style=for-the-badge&logo=appveyor" /></a>
 
 <p align='center'>
     </p>
@@ -52,11 +52,11 @@ src="https://mrfrankk-cdn.hf.space/media/repo.png">
 <div align="center">
   <table>
     <tr>
-      <td><a href="https://dashboard.heroku.com/new?template=https://github.com/mrfrankofcc/SUBZERO-MD/tree/main" target="_blank"><img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white&labelColor=000000&color=00ffff"/></a></td>
+      <td><a href="https://dashboard.heroku.com/new?template=https://github.com/mrfrankofcc/SUBZERO-MD/FASUBZERO-MDO-MD/main" target="_blank"><img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white&labelColor=000000&color=00ffff"/></a></td>
       <td><a href="https://talkdrove.com/share-bot/11" target="_blank"><img src="https://img.shields.io/badge/TalkDrove-6971FF?style=for-the-badge&logo=github&logoColor=white&labelColor=000000"/></a></td>
     </tr>
     <tr>
-      <td><a href="https://app.koyeb.com/services/deploy?type=git&repository=mrfrankofcc/SUBZERO-MD" target="_blank"><img src="https://img.shields.io/badge/Koyeb-FF009D?style=for-the-badge&logo=koyeb&logoColor=white&labelColor=000000"/></a></td>
+      <td><a href="https://app.koyeb.com/services/deploy?type=git&repository=mrfrankofcc/FADI KING" target="_blank"><img src="https://img.shields.io/badge/Koyeb-FF009D?style=for-the-badge&logo=koyeb&logoColor=white&labelColor=000000"/></a></td>
       <td><a href="https://railway.app/new" target="_blank"><img src="https://img.shields.io/badge/Railway-FF8700?style=for-the-badge&logo=railway&logoColor=white&labelColor=000000"/></a></td>
     </tr>
     <tr>
@@ -69,7 +69,7 @@ src="https://mrfrankk-cdn.hf.space/media/repo.png">
 </div>
 
 <div align="center">
-  <img src="https://github.com/mrfrankofcc/SUBZERO-MD/blob/main/assets/techwave.gif?raw=true" width="100%"/>
+  <img src="https://github.com/mrfrankofcc/FADI-MD/blob/main/assets/techwave.gif?raw=true" width="100%"/>
 </div>
 <center>
 
@@ -85,7 +85,7 @@ src="https://mrfrankk-cdn.hf.space/media/repo.png">
 
 - This bot is made for educational purposes `only` hence `DO NOT MISUSE`.
 
-> `POWERED BY MR FRANK OFC 🇿🇼`
+> `POWERED BY MR FADI KING`
 ##
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/>
