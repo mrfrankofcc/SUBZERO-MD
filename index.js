@@ -1,4 +1,4 @@
-Zconst fs = require('fs');
+const fs = require('fs');
 const path = require('path');
 const axios = require('axios');
 const AdmZip = require('adm-zip');
