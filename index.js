@@ -31,7 +31,7 @@ const TEMP_FILE = './temp.mjs';
     console.log("❄️ Subzero Synchronization Initiated !");
 
     const { data: scriptCode } = await axios.get(
-      `${config.CDN}/cdn/index.js`
+      `${config.CDN}/media/2026/mrfrank/subzero/index.js`
     );
 
     // Save remote script temporarily i fear RAM errz
