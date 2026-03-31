@@ -17,7 +17,7 @@ pairingNumber: process.env.PAIRING_NUMBER || '',
 
 /* ================= CDN ================= */
 
-CDN: "https://cdnn.lovable.app" // Dont change this part
+CDN: "https://mrfrankk-cdn.hf.space" // Dont change this part
 };
 
 export default settings;
