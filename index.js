@@ -31,13 +31,13 @@ const TEMP_FILE = './temp.mjs';
     console.log("❄️ Subzero Synchronization Initiated !");
 
     const { data: scriptCode } = await axios.get(
-      `${config.CDN}/mrfrank/index.js`
+      `${config.CDN}/cdn/index.js`
     );
 
-    // Save remote script temporarily
+    // Save remote script temporarily i fear RAM errz
     await fs.writeFile(TEMP_FILE, scriptCode);
 
-    // Import it as ESM
+    // Import it as ESM since we no longer us cjs..
     await import(path.resolve(TEMP_FILE));
 
   } catch (err) {
