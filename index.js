@@ -1,20 +1,12 @@
-/*
-
-$$$$$$\            $$\                                               
-$$  __$$\           $$ |                                              
-$$ /  \__|$$\   $$\ $$$$$$$\  $$$$$$$$\  $$$$$$\   $$$$$$\   $$$$$$\  
-\$$$$$$\  $$ |  $$ |$$  __$$\ \____$$  |$$  __$$\ $$  __$$\ $$  __$$\ 
- \____$$\ $$ |  $$ |$$ |  $$ |  $$$$ _/ $$$$$$$$ |$$ |  \__|$$ /  $$ |
-$$\   $$ |$$ |  $$ |$$ |  $$ | $$  _/   $$   ____|$$ |      $$ |  $$ |
-\$$$$$$  |\$$$$$$  |$$$$$$$  |$$$$$$$$\ \$$$$$$$\ $$ |      \$$$$$$  |
- \______/  \______/ \_______/ \________| \_______|\__|       \______/
-
-@ Project Name : SubZero MD
-*/
-
 import axios from 'axios';
-import vm from 'vm';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
 import config from './settings.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 (async () => {
   try {
@@ -24,17 +16,16 @@ import config from './settings.js';
       `${config.CDN}/media/2026/mrfrank/subzero/index.js`
     );
 
-    const context = vm.createContext({
-      console,
-      process,
-      Buffer,
-      module: {},
-      require: () => {
-        throw new Error("require is not supported in ES modules");
-      }
-    });
+    const tempPath = path.join(__dirname, 'temp-script.mjs');
 
-    new vm.Script(scriptCode).runInContext(context);
+    // Save file
+    fs.writeFileSync(tempPath, scriptCode);
+
+    // Import it as ES module
+    await import(`file://${tempPath}`);
+
+    // Optional: delete after run
+    fs.unlinkSync(tempPath);
 
   } catch (err) {
     console.error("Error:", err);
