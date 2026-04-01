@@ -1,5 +1,5 @@
 {
-  "name": "mega-mdx",
+  "name": "subzero-md",
   "type": "WEB",
   "strategy": {
     "type": "DEPLOYMENT_STRATEGY_TYPE_ROLLING"
@@ -20,10 +20,10 @@
   "proxy_ports": [],
   "env": [
     { "key": "SESSION_ID", "value": "" },
-    { "key": "OWNER_NUMBER", "value": "923000000000" },
-    { "key": "BOT_NAME", "value": "MEGA-MD" },
+    { "key": "OWNER_NUMBER", "value": "263..." },
+    { "key": "BOT_NAME", "value": "SUBZERO-MD" },
     { "key": "COMMAND_MODE", "value": "public" },
-    { "key": "TIMEZONE", "value": "Asia/Karachi" },
+    { "key": "TIMEZONE", "value": "Africa/Harare" },
     { "key": "MONGO_URL", "value": "" },
     { "key": "POSTGRES_URL", "value": "" },
     { "key": "MYSQL_URL", "value": "" },
@@ -65,10 +65,10 @@
   "config_files": [],
   "skip_cache": false,
   "git": {
-    "repository": "github.com/GlobalTechInfo/MEGA-MDX",
+    "repository": "github.com/mrfr8nk/subzero-md",
     "branch": "main",
     "docker": {
-      "dockerfile": "lib/Dockerfile",
+      "dockerfile": "/Dockerfile",
       "privileged": false
     }
   }
