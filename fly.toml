@@ -1,4 +1,4 @@
-app = "mega-md"
+app = "subzero-md"
 primary_region = "iad"
 
 [build]
@@ -6,11 +6,11 @@ primary_region = "iad"
 
 [env]
   PORT = "5000"
-  BOT_NAME = "MEGA-MD"
+  BOT_NAME = "SUBZERO-MD"
   COMMAND_MODE = "public"
-  TIMEZONE = "Asia/Karachi"
+  TIMEZONE = "Africa/Harare"
   SESSION_ID = ""
-  OWNER_NUMBER = "923000000000"
+  OWNER_NUMBER = "263719647303"
   MONGO_URL = ""
   POSTGRES_URL = ""
   MYSQL_URL = ""
