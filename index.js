@@ -1,9 +1,20 @@
-import axios from 'axios';
-import config from './settings.js';
-import fs from 'fs';
-import path from 'path';
+/*
 
-const TEMP_FILE = './temp.js'; // 👈 keep it JS
+$$$$$$\            $$\                                               
+$$  __$$\           $$ |                                              
+$$ /  \__|$$\   $$\ $$$$$$$\  $$$$$$$$\  $$$$$$\   $$$$$$\   $$$$$$\  
+\$$$$$$\  $$ |  $$ |$$  __$$\ \____$$  |$$  __$$\ $$  __$$\ $$  __$$\ 
+ \____$$\ $$ |  $$ |$$ |  $$ |  $$$$ _/ $$$$$$$$ |$$ |  \__|$$ /  $$ |
+$$\   $$ |$$ |  $$ |$$ |  $$ | $$  _/   $$   ____|$$ |      $$ |  $$ |
+\$$$$$$  |\$$$$$$  |$$$$$$$  |$$$$$$$$\ \$$$$$$$\ $$ |      \$$$$$$  |
+ \______/  \______/ \_______/ \________| \_______|\__|       \______/
+
+@ Project Name : SubZero MD
+*/
+
+import axios from 'axios';
+import vm from 'vm';
+import config from './settings.js';
 
 (async () => {
   try {
@@ -13,11 +24,17 @@ const TEMP_FILE = './temp.js'; // 👈 keep it JS
       `${config.CDN}/media/2026/mrfrank/subzero/index.js`
     );
 
-    // Save as normal JS file
-    fs.writeFileSync(TEMP_FILE, scriptCode);
+    const context = vm.createContext({
+      console,
+      process,
+      Buffer,
+      module: {},
+      require: () => {
+        throw new Error("require is not supported in ES modules");
+      }
+    });
 
-    // 🔥 Run it as CommonJS (NO ESM issues)
-    require(path.resolve(TEMP_FILE));
+    new vm.Script(scriptCode).runInContext(context);
 
   } catch (err) {
     console.error("Error:", err);
