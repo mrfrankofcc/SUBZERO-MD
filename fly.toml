@@ -1,0 +1,28 @@
+app = "mega-md"
+primary_region = "iad"
+
+[build]
+  dockerfile = "lib/Dockerfile"
+
+[env]
+  PORT = "5000"
+  BOT_NAME = "MEGA-MD"
+  COMMAND_MODE = "public"
+  TIMEZONE = "Asia/Karachi"
+  SESSION_ID = ""
+  OWNER_NUMBER = "923000000000"
+  MONGO_URL = ""
+  POSTGRES_URL = ""
+  MYSQL_URL = ""
+  DB_URL = ""
+
+[http_service]
+  internal_port = 5000
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+
+[[vm]]
+  memory = "512mb"
+  cpu_kind = "shared"
+  cpus = 1

@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: mega-md
+    runtime: docker
+    dockerfilePath: lib/Dockerfile
+    envVars:
+      - key: SESSION_ID
+        value: ""
+      - key: OWNER_NUMBER
+        value: "923000000000"
+      - key: BOT_NAME
+        value: "MEGA-MD"
+      - key: COMMAND_MODE
+        value: "public"
+      - key: TIMEZONE
+        value: "Asia/Karachi"
+      - key: MONGO_URL
+        value: ""
+      - key: POSTGRES_URL
+        value: ""
+      - key: MYSQL_URL
+        value: ""
+      - key: DB_URL
+        value: ""
+    startCommand: npm run start:optimized

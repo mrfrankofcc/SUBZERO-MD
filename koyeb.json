@@ -1,0 +1,75 @@
+{
+  "name": "mega-mdx",
+  "type": "WEB",
+  "strategy": {
+    "type": "DEPLOYMENT_STRATEGY_TYPE_ROLLING"
+  },
+  "routes": [
+    {
+      "port": 5000,
+      "path": "/",
+      "security_policies": null
+    }
+  ],
+  "ports": [
+    {
+      "port": 5000,
+      "protocol": "http"
+    }
+  ],
+  "proxy_ports": [],
+  "env": [
+    { "key": "SESSION_ID", "value": "" },
+    { "key": "OWNER_NUMBER", "value": "923000000000" },
+    { "key": "BOT_NAME", "value": "MEGA-MD" },
+    { "key": "COMMAND_MODE", "value": "public" },
+    { "key": "TIMEZONE", "value": "Asia/Karachi" },
+    { "key": "MONGO_URL", "value": "" },
+    { "key": "POSTGRES_URL", "value": "" },
+    { "key": "MYSQL_URL", "value": "" },
+    { "key": "DB_URL", "value": "" }
+  ],
+  "regions": ["fra"],
+  "scalings": [
+    {
+      "scopes": ["region:fra"],
+      "min": 0,
+      "max": 1,
+      "targets": [
+        {
+          "sleep_idle_delay": {
+            "value": 0,
+            "deep_sleep_value": 3900,
+            "light_sleep_value": 0
+          }
+        }
+      ]
+    }
+  ],
+  "instance_types": [
+    {
+      "scopes": ["region:fra"],
+      "type": "free"
+    }
+  ],
+  "health_checks": [
+    {
+      "grace_period": 5,
+      "interval": 30,
+      "restart_limit": 3,
+      "timeout": 5,
+      "tcp": { "port": 5000 }
+    }
+  ],
+  "volumes": [],
+  "config_files": [],
+  "skip_cache": false,
+  "git": {
+    "repository": "github.com/GlobalTechInfo/MEGA-MDX",
+    "branch": "main",
+    "docker": {
+      "dockerfile": "lib/Dockerfile",
+      "privileged": false
+    }
+  }
+}
