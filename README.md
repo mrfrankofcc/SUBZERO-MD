@@ -1,11 +1,11 @@
-<!--SUBZERO V6 FINAL || DO NOT COPY MY README WITHOUT CREDITS-->
+<!--SUBZERO V7 FINAL || DO NOT COPY MY README WITHOUT CREDITS-->
 
 
 
 <h1 align="center">𝐒𝐔𝐁𝐙𝐄𝐑𝐎 𝐌𝐃 </h1>
 
 <img align="center" height="auto"
-src="https://mrfrankk-cdn.hf.space/media/repo.png">
+src="https://mrfrankk-cdn.hf.space/media/subzero/sublogo.png">
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=506EF8&lines=WELCOME+TO+SUBZERO+MD+MADE+BY;MR+FRANK+OFC;THANKS+FOR+VISITING+MY+REPO)](https://git.io/typing-svg)
 <br>
@@ -41,7 +41,7 @@ src="https://mrfrankk-cdn.hf.space/media/repo.png">
 <p align="center">
     <strong>𝗚𝗘𝗧 𝗦𝗘𝗦𝗦𝗜𝗢𝗡_𝗜𝗗 </strong>
   <br>
-    <a href="https://pair.subzero.gleeze.com" target="_blank">
+    <a href="https://sessions.subzero.gleeze.com" target="_blank">
         <img alt="Session ID" src="https://img.shields.io/badge/SESSION%20ID-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkblue&color=darkpurple"/>
     </a>
 </p>
@@ -65,7 +65,7 @@ src="https://mrfrankk-cdn.hf.space/media/repo.png">
     </tr>
   </table>
 
-  <td><a href="https://subzeronodez.gleeze.com" target="_blank"><img src="https://img.shields.io/badge/SubzeroNodes-000000?style=for-the-badge&logo=bot-hosting&logoColor=white&labelColor=000000&color=blue"/></a></td>
+  <td><a href="https://subnodes.gleeze.com" target="_blank"><img src="https://img.shields.io/badge/SubzeroNodes-000000?style=for-the-badge&logo=bot-hosting&logoColor=white&labelColor=000000&color=blue"/></a></td>
 </div>
 
 <div align="center">
