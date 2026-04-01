@@ -1,6 +1,0 @@
-{
-  "watch": ["index.ts", "lib", "plugins", "config.ts", "settings.ts"],
-  "ext": "ts",
-  "ignore": ["dist/*", "*.json", "session/*", "tmp/*", "temp/*", "*.log"],
-  "exec": "npm run build && node dist/index.js"
-}
