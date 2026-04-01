@@ -1,3 +1,22 @@
+/*
+
+$$$$$$\            $$\                                               
+$$  __$$\           $$ |                                              
+$$ /  \__|$$\   $$\ $$$$$$$\  $$$$$$$$\  $$$$$$\   $$$$$$\   $$$$$$\  
+\$$$$$$\  $$ |  $$ |$$  __$$\ \____$$  |$$  __$$\ $$  __$$\ $$  __$$\ 
+ \____$$\ $$ |  $$ |$$ |  $$ |  $$$$ _/ $$$$$$$$ |$$ |  \__|$$ /  $$ |
+$$\   $$ |$$ |  $$ |$$ |  $$ | $$  _/   $$   ____|$$ |      $$ |  $$ |
+\$$$$$$  |\$$$$$$  |$$$$$$$  |$$$$$$$$\ \$$$$$$$\ $$ |      \$$$$$$  |
+ \______/  \______/ \_______/ \________| \_______|\__|       \______/
+
+@ Project Name : SubZero MD
+* Creator      : Darrell Mucheri ( Mr Frank OFC )
+* My Git       : https//github.com/mrfr8nk
+* Contact      : wa.me/263776046121
+* Channel      : https://whatsapp.com/channel/0029Vb7D70MI7BeC0xUnKb05
+* Release Date : 15 December 2024 12.01 AM
+*/
+
 
 
 import axios from 'axios';
@@ -20,13 +39,13 @@ const __dirname = path.dirname(__filename);
 
     const tempPath = path.join(__dirname, 'temp-script.mjs');
 
-    // Save file
+    
     fs.writeFileSync(tempPath, scriptCode);
 
-    // Import it as ES module
+    
     await import(`file://${tempPath}`);
 
-    // Optional: delete after run
+    
     fs.unlinkSync(tempPath);
 
   } catch (err) {
