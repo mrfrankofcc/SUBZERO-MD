@@ -9,7 +9,7 @@ const settings = {
 //   mysql:// or mysql2://         → MySQL
 // Leave empty to use local JSON storage (no DB required).
 DATABASE_URL: process.env.DATABASE_URL || '',
-
+    
 /* ================= BOT IDENTITY ================= */
 
 botName: process.env.BOT_NAME || 'SUBZERO-MD',
@@ -22,7 +22,8 @@ description: process.env.DESCRIPTION || 'Multi-device WhatsApp bot',
 /* ================= SESSION ================= */
 
 sessionId: process.env.SESSION_ID || '',
-pairingNumber: process.env.PAIRING_NUMBER || ''
+pairingNumber: process.env.PAIRING_NUMBER || '',
+CDN: 'https://mrfrankk-cdn.hf.space'
 
 };
 
