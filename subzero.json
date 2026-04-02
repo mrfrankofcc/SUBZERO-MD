@@ -21,20 +21,8 @@
       "value": "263719647303"
     },
 
-    "MONGO_URL": {
-      "description": "MongoDB connection URI for enabling persistent storage of bot data such as user sessions, logs, and configurations. Recommended for scalable deployments.",
-      "required": false,
-      "value": ""
-    },
-
-    "POSTGRES_URL": {
-      "description": "PostgreSQL database connection string for structured data storage. Ideal for relational data and advanced querying requirements.",
-      "required": false,
-      "value": ""
-    },
-
-    "MYSQL_URL": {
-      "description": "MySQL database connection URI for persistent structured storage. Useful for compatibility with existing MySQL-based systems.",
+    "DATABASE_URL": {
+      "description": "MongoDB connection URI, PostgreSQL database connection string or MySQL database connection URI for enabling persistent storage of bot data such as user sessions, logs, and configurations. Recommended for scalable deployments.",
       "required": false,
       "value": ""
     },
