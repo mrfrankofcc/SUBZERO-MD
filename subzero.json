@@ -1,7 +1,7 @@
 {
   "name": "subzero-md",
   "description": "A high-performance, multi-device WhatsApp automation bot built on Node.js, engineered for reliability, scalability, and advanced message handling. Developed by Mr Frank OFC, this bot supports session-based authentication, dynamic command execution, and optional database integrations for persistent data storage across MongoDB, PostgreSQL, or MySQL.",
-  "logo": "https://mrfrankk-cdn.hf.space/media/subzero/sublogo.png",
+  "logo": "https://media.mrfrankofc.gleeze.com/media/subzero/sublogo.png",
   "docs": "https://sessions.subzero.gleeze.com",
   "keywords": ["SUBZERO-MD", "whatsapp-bot", "automation", "multi-device", "nodejs"],
   "success_url": "/",  
