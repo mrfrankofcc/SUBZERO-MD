@@ -36,7 +36,7 @@
     "BOT_OWNER": {
       "description": "Display name of the bot owner or developer. This may appear in bot information, menus, or credits.",
       "required": false,
-      "value": "Mr Frank OFC"
+      "value": "Mr Frank OFC."
     },
 
     "PREFIXES": {
@@ -48,7 +48,7 @@
     "PACKNAME": {
       "description": "Default sticker pack name used when generating or sending stickers through the bot.",
       "required": false,
-      "value": "SUBZERO-MD"
+      "value": "SUBZERO-MD."
     },
 
     "COMMAND_MODE": {
