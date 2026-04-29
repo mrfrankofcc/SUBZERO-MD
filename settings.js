@@ -12,11 +12,11 @@ DATABASE_URL: process.env.DATABASE_URL || '',
     
 /* ================= BOT IDENTITY ================= */
 
-botName: process.env.BOT_NAME || 'SUBZERO-MD',
-botOwner: process.env.BOT_OWNER || 'Darrell M',
-ownerNumber: process.env.OWNER_NUMBER || '263719647303',
-author: process.env.AUTHOR || 'Mr Frank OFC',
-packname: process.env.PACKNAME || 'SUBZERO-MD',
+botName: process.env.BOT_NAME || '🇸‌🇦‌🇸‌🇭‌🇦‌ᵇᵒᵗ',
+botOwner: process.env.BOT_OWNER || 'KIRA',
+ownerNumber: process.env.OWNER_NUMBER || '919188252308',
+author: process.env.AUTHOR || 'KIRA',
+packname: process.env.PACKNAME || '🇸‌🇦‌🇸‌🇭‌🇦‌ᵇᵒᵗ',
 description: process.env.DESCRIPTION || 'Multi-device WhatsApp bot',
 
 /* ================= SESSION ================= */
