@@ -1,9 +1,9 @@
 {
-  "name": "SubZero-MD",
+  "name": "🇸‌🇦‌🇸‌🇭‌🇦‌ᵇᵒᵗ",
   "description": "A high-performance, multi-device WhatsApp bot built on Node.js.",
-  "logo": "https://media.mrfrankofc.gleeze.com/media/subzero/sublogo.png",
+  "logo": "https://i.ibb.co/mF2JNSLF/temp.jpg",
   "docs": "https://sessions.subzero.gleeze.com",
-  "keywords": ["SUBZERO-MD", "whatsapp-bot", "automation", "multi-device", "nodejs"],
+  "keywords": ["🇸‌🇦‌🇸‌🇭‌🇦‌ᵇᵒᵗ", "whatsapp-bot", "automation", "multi-device", "nodejs"],
   "success_url": "/",  
   "repository": "https://github.com/mrfr8nk/SUBZERO-MD",
   "stack": "heroku-24",
@@ -18,7 +18,7 @@
     "OWNER_NUMBER": {
       "description": "Primary administrator WhatsApp number in international format (e.g. 263719647303). This number receives privileged access to bot commands and controls.",
       "required": true,
-      "value": "263719647303"
+      "value": "919188252508"
     },
 
     "DATABASE_URL": {
@@ -30,13 +30,13 @@
     "BOT_NAME": {
       "description": "Display name of the bot as seen in chats and command responses. Customize to match your branding or project identity.",
       "required": false,
-      "value": "SUBZERO-MD"
+      "value": "🇸‌🇦‌🇸‌🇭‌🇦‌ᵇᵒᵗ"
     },
 
     "BOT_OWNER": {
       "description": "Display name of the bot owner or developer. This may appear in bot information, menus, or credits.",
       "required": false,
-      "value": "Mr Frank OFC."
+      "value": "KIRA."
     },
 
     "PREFIXES": {
@@ -48,7 +48,7 @@
     "PACKNAME": {
       "description": "Default sticker pack name used when generating or sending stickers through the bot.",
       "required": false,
-      "value": "SUBZERO-MD."
+      "value": "🇸‌🇦‌🇸‌🇭‌🇦‌ᵇᵒᵗ"
     },
 
     "COMMAND_MODE": {
