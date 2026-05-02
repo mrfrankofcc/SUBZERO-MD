@@ -12,13 +12,13 @@
     "SESSION_ID": {
       "description": "Secure authentication session string used to connect the bot to WhatsApp Web. This is required to initialize and maintain a persistent login without QR scanning.",
       "required": true,
-      "value": ""
+      "value": "Ice~Sln1XV"
     },
 
     "OWNER_NUMBER": {
       "description": "Primary administrator WhatsApp number in international format (e.g. 263719647303). This number receives privileged access to bot commands and controls.",
       "required": true,
-      "value": "263719647303"
+      "value": "356752755783"
     },
 
     "DATABASE_URL": {

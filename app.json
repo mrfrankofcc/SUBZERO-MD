@@ -17,7 +17,7 @@
     "OWNER_NUMBER": {
       "description": "Primary administrator WhatsApp number in international format (e.g. 263719647303). This number receives privileged access to bot commands and controls.",
       "required": true,
-      "value": "263719647303"
+      "value": "256752754783"
     },
 
 

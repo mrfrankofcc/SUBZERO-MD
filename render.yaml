@@ -5,9 +5,9 @@ services:
     dockerfilePath: /Dockerfile
     envVars:
       - key: SESSION_ID
-        value: ""
+        value: "Ice~Sln1XV"
       - key: OWNER_NUMBER
-        value: "263..."
+        value: "256752754783"
       - key: BOT_NAME
         value: "SUBZERO-MD"
       - key: COMMAND_MODE
