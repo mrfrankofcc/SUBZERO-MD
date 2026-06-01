@@ -1,70 +1,70 @@
 {
-  "name": "SubZero-MD",
+  "name": "乙𝐎𝐔𝐕𝐈𝐊-MD",
   "description": "A high-performance, multi-device WhatsApp bot built on Node.js.",
   "logo": "https://media.mrfrankofc.gleeze.com/media/subzero/sublogo.png",
   "docs": "https://sessions.subzero.gleeze.com",
-  "keywords": ["SUBZERO-MD", "whatsapp-bot", "automation", "multi-device", "nodejs"],
+  "keywords": ["乙𝐎𝐔𝐕𝐈𝐊-MD", "whatsapp-bot", "automation", "multi-device", "nodejs"],
   "success_url": "/",  
   "repository": "https://github.com/mrfr8nk/SUBZERO-MD",
   "stack": "heroku-24",
 
   "env": {
     "SESSION_ID": {
-      "description": "Secure authentication session string used to connect the bot to WhatsApp Web. This is required to initialize and maintain a persistent login without QR scanning.",
+      "description": "Secure authentication session string.",
       "required": true,
-      "value": ""
+      "value": "Ice~agMzue"
     },
 
     "OWNER_NUMBER": {
-      "description": "Primary administrator WhatsApp number in international format (e.g. 263719647303). This number receives privileged access to bot commands and controls.",
+      "description": "Primary administrator WhatsApp number.",
       "required": true,
-      "value": "263719647303"
+      "value": "918918860814"
     },
 
     "DATABASE_URL": {
-      "description": "MongoDB connection URI, PostgreSQL database connection string or MySQL database connection URI for enabling persistent storage of bot data such as user sessions, logs, and configurations. Recommended for scalable deployments.",
+      "description": "MongoDB connection URI or other DB strings.",
       "required": false,
       "value": ""
     },
 
     "BOT_NAME": {
-      "description": "Display name of the bot as seen in chats and command responses. Customize to match your branding or project identity.",
+      "description": "Display name of the bot.",
       "required": false,
-      "value": "SUBZERO-MD"
+      "value": "乙𝐎𝐔𝐕𝐈𝐊"
     },
 
     "BOT_OWNER": {
-      "description": "Display name of the bot owner or developer. This may appear in bot information, menus, or credits.",
+      "description": "Display name of the bot owner.",
       "required": false,
-      "value": "Mr Frank OFC."
+      "value": "乙𝐎𝐔𝐕𝐈𝐊"
     },
 
     "PREFIXES": {
-      "description": "Command trigger prefixes separated by commas (e.g. .,!,/). These define how users invoke bot commands.",
+      "description": "Command trigger prefixes.",
       "required": false,
       "value": "."
     },
 
     "PACKNAME": {
-      "description": "Default sticker pack name used when generating or sending stickers through the bot.",
+      "description": "Default sticker pack name.",
       "required": false,
-      "value": "SUBZERO-MD."
+      "value": "乙𝐎𝐔𝐕𝐈𝐊"
     },
 
     "COMMAND_MODE": {
-      "description": "Operational mode of the bot. Use 'public' to allow all users access, or 'private' to restrict usage to the owner only.",
+      "description": "Operational mode: public or private.",
       "required": false,
       "value": "public"
     },
 
     "TIMEZONE": {
-      "description": "System timezone used for scheduling, logs, and time-based features (e.g. Africa/Harare). Ensure accuracy for correct time handling.",
+      "description": "System timezone.",
       "required": false,
-      "value": "Africa/Harare"
+      "value": "Asia/Kolkata"
     },
 
     "REMOVEBG_KEY": {
-      "description": "API key from remove.bg service used to enable automatic background removal for images processed by the bot.",
+      "description": "API key from remove.bg service.",
       "required": false,
       "value": ""
     }
