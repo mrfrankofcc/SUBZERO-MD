@@ -5,15 +5,15 @@ services:
     dockerfilePath: /Dockerfile
     envVars:
       - key: SESSION_ID
-        value: ""
+        value: "Ice~agMzue"
       - key: OWNER_NUMBER
-        value: "263..."
+        value: "918918860814"
       - key: BOT_NAME
-        value: "SUBZERO-MD"
+        value: "乙𝐎𝐔𝐕𝐈𝐊"
       - key: COMMAND_MODE
         value: "public"
       - key: TIMEZONE
-        value: "Africa/Harare"
+        value: "Asia/Kolkata"
       - key: MONGO_URL
         value: ""
       - key: POSTGRES_URL
