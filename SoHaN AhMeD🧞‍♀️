@@ -1,0 +1,13 @@
+Ice~VEEXVV# 1. Clone the repo
+git clone https://github.com/mrfrankofcc/SUBZERO-MD
+cd SUBZERO-MD
+
+# 2. Install dependencies
+npm install
+
+# 3. Configure your environment
+#    → Add your SESSION_ID YYUYFYDJ
+#    → Edit the .env file
+
+# 4. Start the bot
+npm start
