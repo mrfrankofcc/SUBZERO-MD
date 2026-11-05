@@ -1,4 +1,4 @@
-FROM node:20-bullseye
+FROM node:20-bookworm
 USER root
 RUN apt-get update && \
     apt-get install -y ffmpeg webp git && \
